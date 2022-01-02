@@ -1,38 +1,50 @@
-.App {
+.app {
+  background-color: cadetblue;
+  height: 100vh;
+  width: 100%;
+}
+.header {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.input_text {
+  height: 30px;
+  width: 80vw;
+  margin: auto;
+  display: block;
+
+  border: 10px solid rgb(224, 174, 174);
+  outline: none;
+  margin: 10px auto;
+  font-size: 20px;
+}
+.textarea {
+  background-color: white;
+  width: 90%;
+  height: 40vh;
+  display: block;
+  margin: auto;
+  font-size: 25px;
+  padding: 20px;
+  overflow-y: scroll;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+}
+.marked {
+  background-color: rgba(80, 211, 211, 0.5);
+  border: 1px solid rgb(43, 82, 82);
+}
+h2 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#text_change {
+  background-color: white;
+  width: 90%;
+  height: 20vh;
+  display: block;
+  margin: auto;
+  font-size: 25px;
+  padding: 20px;
+  overflow-y: scroll;
 }
