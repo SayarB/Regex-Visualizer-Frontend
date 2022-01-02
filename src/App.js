@@ -12,13 +12,16 @@ function App() {
 
   useEffect(() => {
     async function getOutput() {
-      const res = await fetch("http://192.168.0.6:8000/run", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ regex: input, text: testString }),
-      });
+      const res = await fetch(
+        "https://regex-visualizer-backend.herokuapp.com/run",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ regex: input, text: testString }),
+        }
+      );
       const indices = await res.json();
       setIndexArr(indices);
     }
